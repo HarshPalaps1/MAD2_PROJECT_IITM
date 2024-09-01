@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body> 
+        <h1>Total Store Registered on APP :-  {{count}} </h2> 
+        <h1>Total product got sold {{number}} </h2> 
+            <ul id="order">
+                
+                {% for item in order %}
+                   
+                    <TR>
+                        <li><TD class="c2"></TD>
+                            <h3>product :-{{item.product_name}} of {{item.quantity}} quantiy sold  at {{item.rate}}</h3><h2><TD class="c3"></TD> </h2>
+                        <TD class="c4"><SPAN></SPAN></TD></li>
+                        
+                      
+                {% endfor %}
+                </ul>
+    </body> 
+    
+</body>
+</html>
